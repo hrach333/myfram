@@ -1,0 +1,21 @@
+{
+    "name": "hrach/myfram",
+    "description": "this is my first framework, I will try to update and improve it.",
+    "authors": [
+        {
+            "name": "Hrach",
+            "email": "hrach@hrach.ru"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.23",
+        "phpmailer/phpmailer": "^6.0",
+        "vlucas/valitron": "^1.4"
+    },
+    "autoload":{
+        "psr-4":{
+            "myfram\\":"vendor/myfram",
+            "app\\":"app"
+        }
+    }
+}
