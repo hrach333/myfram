@@ -23,10 +23,7 @@ class MainController extends AppController
 
         $model = new Main();
         $mailer= new PHPMailer();
-        //var_dump($mailer);
-        // $obj = App::$app->getObj();
-        //$obj['cache']->set('posts',$posts);
-        //$posts = $model->findAll();
+
         $posts = \R::findAll('posts');
         View::setMeta('Главная страница','Описание страницы','ключевые слова');
         $title= 'Посты';
